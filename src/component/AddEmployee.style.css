@@ -1,0 +1,150 @@
+.formContainer {
+    display: flex;
+    justify-content: center;
+    height: 75vh;
+    align-items: center;
+}
+
+input[type="text"] {
+    height: 20px;
+    padding-left: 15px;
+    margin: 5px;
+}
+
+input[type="button"],
+input[type="submit"] {
+    height: 25px;
+    margin-left: 10px;
+}
+
+.headingH {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin: 20px;
+}
+
+.InputDataFlied {
+    display: flex;
+    flex-direction: column;
+}
+
+.InputDataFlied label {
+    font-size: 18px;
+    font-weight: 600;
+    /* position: relative; */
+    /* left: 0px; */
+    padding: 5px;
+}
+
+.InputDataFlied input {
+    height: 40px;
+    width: 400px;
+    margin: 10px 0px;
+    border: none;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    /* box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); */
+    box-shadow: 0 3px 3px rgb(0 0 0 / 0.1);
+}
+
+.InputDataFlied input:hover,
+.InputDataFlied input:focus {
+    background-color: #fff;
+}
+
+.InputDataButton {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+.InputDataButton input {
+    min-width: 100px;
+    height: 37px !important;
+    border: none;
+    border-radius: 8px;
+    background: transparent;
+    border: 2px solid darkblue;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.InputDataButton input:nth-child(even) {
+    background-color: whitesmoke;
+    border: none;
+}
+
+.InputDataButton input:hover,
+.InputDataButton input:focus {
+    background-color: whitesmoke;
+    border: none;
+
+}
+
+.InputDataButton input:nth-child(even):hover,
+.InputDataButton input:nth-child(even):focus {
+    background-color: transparent;
+    border: 2px solid darkblue;
+
+}
+
+.formContainerInner {
+    width: 550px;
+    height: 550px;
+    background-color: white;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.formData {
+    margin-top: 30px;
+}
+
+/* -----media quries----- */
+@media (max-width: 576px) {
+    .formContainerInner {
+        width: 300px;
+        height: 450px;
+    }
+
+    .InputDataFlied input {
+        height: 40px;
+        width: 250px;
+        font-size: 12px;
+    }
+
+    .headingH {
+        font-size: 20px;
+    }
+
+    .formData {
+        display: contents;
+    }
+
+    .InputDataFlied label {
+        font-size: 14px;
+    }
+    .InputDataButton input{
+        margin: 10px !important;
+    }
+
+}
+
+@media (min-width: 577px) and (max-width: 768px) {}
+
+@media (min-width: 769px) and (max-width: 992px) {}
+
+@media (min-width: 993px) and (max-width: 1200px) {}
+
+@media (min-width: 1201px) {}

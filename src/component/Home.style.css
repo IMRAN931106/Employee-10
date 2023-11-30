@@ -1,0 +1,64 @@
+.articale-header {
+    background-color: darkblue;
+    color: white;
+    border: 3px solid transparent;
+    text-align: center;
+}
+
+.section-content {
+    margin: 50px 10% 0 10%;
+}
+
+.addEmployeeBtn {
+    float: right;
+    width: auto !important;
+    padding: 0px 15px;
+    border: 1px solid darkblue !important;
+    background-color: transparent !important;
+    top: 46px;
+    right: -30px;
+    position: relative;
+}
+
+.addEmployeeBtn:hover,
+.addEmployeeBtn:focus {
+    background-color: whitesmoke !important;
+    border: none !important;
+}
+
+/* -----media quries----- */
+@media (max-width: 576px) {
+    .section-content {
+        margin: 50px 0px 0 0px;
+    }
+
+    .addEmployeeBtn {
+        /* float: left;
+        right: 25px;
+        position: relative;
+        top: 0px; */
+        float: left;
+        right: -18px;
+        position: absolute;
+        top: 145px;
+    }
+
+    .articale-header {
+        font-size: 12px;
+    }
+
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .section-content {
+        margin: 50px 10px 0 10px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {}
+
+@media (min-width: 1201px) {}

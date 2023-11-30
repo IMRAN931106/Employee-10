@@ -1,0 +1,92 @@
+.table {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+    border-radius: 10px;
+    margin: 10px 15px;
+}
+
+td,
+th {
+    /* border: 1px solid #dddddd; */
+    /* border: 1px solid #dddddd3b; */
+    text-align: left;
+    padding: 15px 15px 15px 30px;  
+    text-transform: capitalize;
+    color: #474747;
+    width: 315px;
+}
+
+/* tr:nth-child(even) { */
+    /* background-color: #dddddd; */
+    /* background-color: #dddddd5c; */
+/* } */
+
+.listHeader {
+    text-align: center;
+    font-size: 40px;
+    padding: 20px 0px;
+    font-weight: 700;
+    top: -50px;
+    left: 50px;
+    position: relative;
+}
+
+input[type="button"]:hover,
+input[type="button"]:focus {
+    color: #000;
+    text-decoration: none;
+    background-color: #fff;
+    border: 2px solid darkblue;
+}
+
+input[type="button"] {
+    cursor: pointer;
+    height: 37px !important;
+    margin: 0px 30px !important;
+    width: 64px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: whitesmoke;
+}
+thead {
+    height: 50px;
+    border-bottom: 1px solid #dddddd;
+}
+.Allbutton {
+    display: flex;
+    /* justify-content: space-around; */
+    justify-content: center;
+}
+
+/* -----media quries----- */
+@media (max-width: 576px) {
+    .listHeader {
+        text-align: center;
+        font-size: 25px;
+        padding: 0px;
+        font-weight: 700;
+        top: -35px;
+        left: 0;
+        margin-bottom: 40px;
+    }
+    .tableMain{
+        width: 100%;
+        overflow: scroll;
+    }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+
+}
+@media (min-width: 769px) and (max-width: 992px) {
+ 
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  
+}
+@media (min-width: 1201px) {
+  
+}
