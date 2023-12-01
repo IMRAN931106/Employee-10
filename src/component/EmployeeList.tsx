@@ -33,32 +33,32 @@ const EmployeeList = (props: Props) => {
                     <div className="listHeader">Employee List</div>
                 </article>
                 <div className="tableMain">
-                <table className="table">
-                    <thead style={{}}>
-                        <tr>
-                            <th>Name</th>
-                            <th>Email</th>
-                            <th style={{textAlign: "center"}}>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {list.map((employee) => {
-                            return (
-                                <tr key={employee.id}>
-                                    <td>{`${employee.firstName} ${employee.lastName}`}</td>
-                                    <td>{employee.email}</td>
-                                    <td>
-                                        <div className="Allbutton">
-                                            <input type="button" value="View" onClick={() => viewEmployeeDetails(employee)} />
-                                            <input type="button" value="Edit" onClick={() => onEdit(employee)} />
-                                            <input type="button" value="Delete" onClick={() => onDeleteClickHnd(employee)} />
-                                        </div>
-                                    </td>
-                                </tr>
-                            );
-                        })}
-                    </tbody>
-                </table>
+                    <table className="table">
+                        <thead style={{}}>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th style={{ textAlign: "center" }}>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {list.map((employee) => {
+                                return (
+                                    <tr key={employee.id}>
+                                        <td>{`${employee.firstName} ${employee.lastName}`}</td>
+                                        <td>{employee.email}</td>
+                                        <td>
+                                            <div className="Allbutton">
+                                                <input type="button" value="View" onClick={() => viewEmployeeDetails(employee)} />
+                                                <input type="button" value="Edit" onClick={() => onEdit(employee)} />
+                                                <input type="button" value="Delete" onClick={() => onDeleteClickHnd(employee)} />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                );
+                            })}
+                        </tbody>
+                    </table>
                 </div>
                 {showModal && employeeDataShow !== null && (<EmployeeModal onClose={onCloseModal} data={employeeDataShow} />)}
             </div>

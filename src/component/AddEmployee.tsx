@@ -59,40 +59,40 @@ const AddEmployee = (props: Props) => {
         <>
             <div className="formContainer">
                 <div className="formContainerInner">
-                <div>
-                    <div className="headingH">Add Employee Details</div>
-                </div>
-                <form onSubmit={onSubmitBtnClickHnd} className="formData">
-                    <div className="InputDataFlied">
-                        <label>First Name : </label>
-                        <input type="text"
-                               placeholder="Enter Your First Name" 
-                            value={firstName}
-                            onChange={onFirstNameChangehnd}
-                        />
+                    <div>
+                        <div className="headingH">Add Employee Details</div>
                     </div>
-                    <div className="InputDataFlied">
-                        <label>Last Name : </label>
-                        <input type="text"
-                            placeholder="Enter Your Last Name"
-                            value={lastName}
-                            onChange={onLastNameChangehnd}
-                        />
-                    </div>
-                    <div className="InputDataFlied">
-                        <label>Email Add : </label>
-                        <input type="text"
-                               placeholder="Enter Your Email"
-                            value={email}
-                            onChange={onEmailChangehnd}
-                        />
-                    </div>
-                    <div className="InputDataButton">
-                    
-                        <input type="button" value="Back" onClick={onBackBtnClickHnd} />
-                        <input type="submit" value="Add" onClick={onSubmitBtnClickHnd} />
-                    </div>
-                </form>
+                    <form onSubmit={onSubmitBtnClickHnd} className="formData">
+                        <div className="InputDataFlied">
+                            <label>First Name : </label>
+                            <input type="text"
+                                placeholder="Enter Your First Name"
+                                value={firstName}
+                                onChange={onFirstNameChangehnd}
+                            />
+                        </div>
+                        <div className="InputDataFlied">
+                            <label>Last Name : </label>
+                            <input type="text"
+                                placeholder="Enter Your Last Name"
+                                value={lastName}
+                                onChange={onLastNameChangehnd}
+                            />
+                        </div>
+                        <div className="InputDataFlied">
+                            <label>Email Add : </label>
+                            <input type="text"
+                                placeholder="Enter Your Email"
+                                value={email}
+                                onChange={onEmailChangehnd}
+                            />
+                        </div>
+                        <div className="InputDataButton">
+
+                            <input type="button" value="Back" onClick={onBackBtnClickHnd} />
+                            <input type="submit" value="Add" onClick={onSubmitBtnClickHnd} />
+                        </div>
+                    </form>
                 </div>
             </div>
         </>

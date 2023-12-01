@@ -9,10 +9,10 @@ type Props = {
 const EmployeeModal = (props: Props) => {
     // ------ props destructure ----
     const { onClose, data } = props;
-// ----return----
+    // ----return----
     return (
         <>
-        {/* ----view employee list------ */}
+            {/* ----view employee list------ */}
             <div id="myModal" className="modal">
                 <div className="modalContent">
                     <span className="close" onClick={onClose}>&times;</span>

@@ -12,15 +12,15 @@ th {
     /* border: 1px solid #dddddd; */
     /* border: 1px solid #dddddd3b; */
     text-align: left;
-    padding: 15px 15px 15px 30px;  
+    padding: 15px 15px 15px 30px;
     text-transform: capitalize;
     color: #474747;
     width: 315px;
 }
 
 /* tr:nth-child(even) { */
-    /* background-color: #dddddd; */
-    /* background-color: #dddddd5c; */
+/* background-color: #dddddd; */
+/* background-color: #dddddd5c; */
 /* } */
 
 .listHeader {
@@ -52,10 +52,12 @@ input[type="button"] {
     font-weight: 600;
     background-color: whitesmoke;
 }
+
 thead {
     height: 50px;
     border-bottom: 1px solid #dddddd;
 }
+
 .Allbutton {
     display: flex;
     /* justify-content: space-around; */
@@ -73,20 +75,17 @@ thead {
         left: 0;
         margin-bottom: 40px;
     }
-    .tableMain{
+
+    .tableMain {
         width: 100%;
         overflow: scroll;
     }
 }
-@media (min-width: 577px) and (max-width: 768px) {
 
-}
-@media (min-width: 769px) and (max-width: 992px) {
- 
-}
-@media (min-width: 993px) and (max-width: 1200px) {
-  
-}
-@media (min-width: 1201px) {
-  
-}
+@media (min-width: 577px) and (max-width: 768px) {}
+
+@media (min-width: 769px) and (max-width: 992px) {}
+
+@media (min-width: 993px) and (max-width: 1200px) {}
+
+@media (min-width: 1201px) {}
