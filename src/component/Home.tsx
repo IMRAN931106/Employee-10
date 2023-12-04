@@ -62,7 +62,7 @@ const Home = () => {
             <article className="articale-header">
                 <header>
                     <h1>
-                       Employee Data 
+                       Employee Data Details
                     </h1>
                 </header>
             </article>
